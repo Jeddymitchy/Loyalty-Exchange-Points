@@ -1,0 +1,19 @@
+{
+  "canisters": {
+    "loyalty_point_exchange-backend": {
+      "main": "src/loyalty_point_exchange_backend/main.mo",
+      "type": "motoko"
+    },
+    "loyalty-point-exchange-frontend": {
+      "main": "loyalty-point-exchange-frontend/src/main.js",
+      "type": "assets"
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
