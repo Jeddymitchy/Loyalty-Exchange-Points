@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "Loyalty-Exchange-Points-backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/Loyalty-Exchange-Points-backend/main.mo",
+      "type": "motoko"
+    },
+    "Loyalty-Exchange-Points-frontend": {
+      "dependencies": [
+        "Loyalty-Exchange-Points-backend"
+      ],
+      "source": [
+        "src/Loyalty-Exchange-Points-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Loyalty-Exchange-Points-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

@@ -1,0 +1,11 @@
+type LoyaltyPoints = 
+ record {
+   bongaPoints: nat;
+   naivasLoyaltyPoints: nat;
+ };
+service : {
+  addOrUpdateUserPoints: (text, nat, nat) -> (text);
+  getUserPoints: (text) -> (opt LoyaltyPoints);
+  transferBongaPoints: (text, text, nat) -> (text);
+  transferNaivasLoyaltyPoints: (text, text, nat) -> (text);
+}
